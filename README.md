@@ -12,5 +12,7 @@
 
 #### Assumptions
 💡  Only English language.  (No Unicode).
+
 💡  No default trim for start.
+
 💡  We do some input type validation
