@@ -4,6 +4,7 @@
 > letter A-Z and returns true or false.
 
 #### Setup
+- You need 'Node.js 14' and 'yarn/npm'
 - Install dependencies `yarn` or `npm i`
 - `npm start` - Runs example.
 - `npm test` - Runs tests.
