@@ -1,7 +1,7 @@
 'use strict';
 const chai = require('chai');
 chai.should();
-const lib = require('../src/lib');
+const lib = require('../src/stringUtil');
 
 describe('Lib', () => {
   describe('isFirstLetterUpperCase()', () => {
