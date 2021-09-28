@@ -5,12 +5,12 @@
   "main": "./src",
   "scripts": {
     "start": "node ./src",
+    "test": "cross-env NODE_ENV='test' node ./node_modules/mocha/bin/mocha --timeout=10000 --exit ./test/**/*.spec.js",
     "start-dev": "nodemon --watch ./src  ./src",
     "test-dev": "nodemon --watch ./test  -x npm run test",
     "eslint:test": "node_modules/.bin/eslint --cache -c .eslintrc.js ./src/*.js ./test/*.js",
     "eslint:fix": "node_modules/.bin/eslint --cache --fix -c .eslintrc.js ./src/*.js ./test/*.js",
     "precommit": "npm run eslint:fix",
-    "test": "cross-env NODE_ENV='test' node ./node_modules/mocha/bin/mocha --timeout=10000 --exit ./test/**/*.spec.js",
     "coverage": "cross-env NODE_ENV='test' node_modules/nyc/bin/nyc.js   npm run test",
     "test-report": "NODE_ENV='test' node_modules/nyc/bin/nyc.js report -r html node_modules/mocha/bin/mocha  --timeout=10000  --exit  test/**/*.spec.js && xdg-open ./coverage/index.html >/dev/null 2>&1"
   },

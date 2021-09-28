@@ -3,7 +3,7 @@ const chai = require('chai');
 chai.should();
 const lib = require('../src/stringUtil');
 
-describe('Lib', () => {
+describe('StringUtil', () => {
   describe('isFirstLetterUpperCase()', () => {
 
     it('should throw an error for wrong input.', () => {
